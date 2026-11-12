@@ -1,0 +1,106 @@
+# =============================================================================
+# 1. TÀI LIỆU: Markdown, PDF, văn bản văn phòng
+# =============================================================================
+*.md
+# ...ngoại trừ README ở thư mục gốc (trang giới thiệu trên GitHub)
+!/README.md
+*.pdf
+*.doc
+*.docx
+*.ppt
+*.pptx
+*.odt
+
+# Thư mục tài liệu của code (docs/, kể cả file Excel tổng hợp trong đó)
+docs/
+doc/
+
+# =============================================================================
+# 2. DỮ LIỆU
+# =============================================================================
+# Sinh lại được bằng: python src/main.py --generate-data
+data/
+*.csv
+*.tsv
+*.xlsx
+*.xls
+*.parquet
+*.feather
+*.pkl
+*.pickle
+*.db
+*.sqlite
+
+# Kết quả chạy và log
+results/
+logs/
+*.log
+*.out
+
+# =============================================================================
+# 3. THÔNG TIN CÁ NHÂN / BÍ MẬT
+# =============================================================================
+# File dự án Gephi lưu đường dẫn máy cá nhân (tên tài khoản, thư mục Desktop)
+*.gephi
+
+# Biến môi trường, khoá, mật khẩu
+.env
+.env.*
+*.pem
+*.key
+secrets*
+*secret*
+*credential*
+*password*
+
+# Ghi chú / hồ sơ cá nhân: đặt tên file hoặc thư mục theo các mẫu dưới
+# đây để chúng không bao giờ bị commit
+personal/
+private/
+ca_nhan/
+*personal*
+*private*
+*ca_nhan*
+*canhan*
+*.local.*
+
+# Bản nén mã nguồn tải về
+*.zip
+*.rar
+*.7z
+
+# =============================================================================
+# 4. PYTHON
+# =============================================================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+.eggs/
+.pytest_cache/
+.mypy_cache/
+.cache/
+
+# Môi trường ảo
+.venv/
+venv/
+env/
+ENV/
+
+# Jupyter
+.ipynb_checkpoints/
+*.nbconvert.ipynb
+
+# =============================================================================
+# 5. EDITOR / HỆ ĐIỀU HÀNH
+# =============================================================================
+.vscode/
+.idea/
+.claude/
+.DS_Store
+Thumbs.db
+Desktop.ini
